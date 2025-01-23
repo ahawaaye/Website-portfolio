@@ -108,6 +108,7 @@ li:hover {
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    border: 1px solid #E9E6DC;
 
 }
 .card-intro-aboutMe-2 {
@@ -216,13 +217,20 @@ li:hover {
 
 
 /* Project Section */
+
+
+
 .title-project-container {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
-.title-project-container.rv{
+
+.title-project-container.rv {
     opacity: 1;
     transform: translateY(0);
 }
@@ -235,6 +243,14 @@ li:hover {
     justify-content: center;
     flex-direction: row;
     padding: 50px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.project-boards-container.rv{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Project Cards */
@@ -246,6 +262,7 @@ li:hover {
     border-radius: 30px;
     padding: 50px;
     margin: 0 20px;
+    border-width: 3px;
 }
 
 /* Logos */
