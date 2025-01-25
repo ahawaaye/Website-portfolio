@@ -20,13 +20,13 @@
             </nav>
             <nav class="side-bar2">
                 <ul>
-                    <li><a href="index.html" class="items">Home</a></li>
-                    <li><a href="#" class="items">Project</a></li>
-                    <li><a href="#" class="items">Contact</a></li>
+                    <li><a href="#home" class="items">Home</a></li>
+                    <li><a href="#projects" class="items">Project</a></li>
+                    <li><a href="#contact" class="items">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="section-1">
+        <section id = "home">
             <div class="portfolio-container">
                 <h2 class="title">My Portfolio..</h2>
             </div>
@@ -56,7 +56,7 @@
             </div>
 
             <div class="buttons-for-app-container">
-                <a href="#" class="circle-for-buttons-1">
+                <a href="mailto:ahawa004@gmail.com" class="circle-for-buttons-1">
                     <img class="images-icon" src="images/Email_icon_sign_symbol_logo-removebg-preview 1.png"
                         alt="Email Icon">
                 </a>
@@ -71,7 +71,7 @@
             </div>
         </section>
 
-        <section class="section-2">
+        <section id="projects">
             <div class="title-project-container">
                 <h1 class="project-text">PROJECTS</h1>
             </div>
@@ -113,9 +113,39 @@
                 </button>
             </div>
         </section>
-        <section>
+        <section id=" contact">
             <div class="image-above-contacts-container">
                 <img class="image-header" src="images/tree-image-navbar.png" alt="Tree Logo">
+            </div>
+            <div class="contact-container">
+                <!-- Contact Header -->
+                <div class="contact-header">
+                    <h2>Contact Me</h2>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <p>Thank you for reviewing my portfolio.</p>
+                </div>
+
+                <!-- Additional Notes -->
+                <div class="additional-notes">
+                    <p>If you want to send me a message, you can fill the form or use the details below:</p>
+
+                </div>
+                <form action="/submit-form" method="POST" class="contact-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here"
+                        required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
         </section>
 
